@@ -1,0 +1,46 @@
+.Monitor {
+    position: relative;
+    transform: translateY(30%);
+    width: 60%;
+}
+
+.screen {
+    fill: #C0C0C0;
+}
+
+.off {
+    opacity: 0.30;
+}
+
+.on {
+    cursor: pointer;
+    opacity: 1;
+}
+
+#click-me {
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-family: 'Cascadia Code';
+}
+
+#flasher {
+    animation: flashing 1s infinite;
+    display: inline-block;
+    transform: translate(-1px, -1px);
+}
+
+@keyframes flashing {
+    0% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

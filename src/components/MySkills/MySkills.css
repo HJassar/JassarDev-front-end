@@ -1,0 +1,44 @@
+.MySkills {
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    width: 15%;
+    height: 75%;
+
+}
+
+.MySkills .off path {
+    fill: #C0C0C0;
+    opacity: 30%;
+}
+
+.MySkills .glow path {
+    fill: white;
+    opacity: 100%;
+}
+
+#React {
+    position: absolute;
+    top: 70%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spin {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

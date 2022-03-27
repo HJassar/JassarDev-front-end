@@ -1,0 +1,61 @@
+.terminal {
+    background: #313131;
+    color: white;
+    font-family: 'Cascadia Code';
+}
+
+.input {
+    border: none;
+    display: inline;
+    font-family: inherit;
+    font-size: inherit;
+    padding: none;
+    outline: none;
+    width: 100%;
+    word-wrap: break-word;
+    background-color: inherit;
+    caret-color: #e0dddd;
+    color: #e0dddd;
+
+}
+
+.terminal ul {
+    list-style: none;
+}
+
+.terminal li {
+    position: relative;
+}
+
+.terminal li:before {
+    content: '> ';
+    position: absolute;
+    left: -1.5em;
+}
+
+
+.animated:after {
+    animation: loading 1s infinite;
+    content: ''
+}
+
+.done:after{
+    content: ' . . . ✓';
+    animation: none;
+}
+
+@keyframes loading {
+    0%, 100% {
+        content: ' . . . ';
+    }
+    10%{
+        content: '   ';
+    }
+    25% {
+        content: ' . ';
+    }
+
+    50% {
+        content: ' . . ';
+    }
+}

@@ -1,0 +1,100 @@
+.LightBox {
+    height: 45px;
+    width: 70px;
+    border: solid thin white;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    border-radius: 5px;
+}
+
+/* Click Me arrow! */
+.arrow {
+    position: absolute;
+    transform: translate(15%, -115%);
+    opacity: 15%;
+}
+
+.arrow path {
+    fill: #C0C0C0;
+
+}
+
+.arrow.night path {
+    fill: white;
+}
+
+.arrow.night {
+    animation: fadeIn 2s infinite alternate;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 15%;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Screws! */
+.screw {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.screw.top {
+    top: 5px;
+}
+
+.screw.right {
+    right: 5px;
+}
+
+.screw.bottom {
+    bottom: 5px;
+}
+
+.screw.left {
+    left: 5px;
+}
+
+/* Switches! */
+.switch {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15%;
+    height: 50%;
+    border: solid thin white;
+    border-radius: 2.75px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.switch.left {
+    left: 30%;
+}
+
+.switch.right {
+    right: 30%;
+}
+
+.light-button {
+    width: 80%;
+    height: 90%;
+    margin: 15% 0 0 10%;
+    background: #FFFFFF;
+    box-shadow: 0 -1.5px 2px inset rgba(0, 0, 0, 0.25),
+        0 10px 2px inset rgba(0, 0, 0, 0.35);
+}
+
+.light-button.clicked {
+    box-shadow: 0 -10px 2px inset rgba(0, 0, 0, 0.25),
+        0 1.5px 2px inset rgba(0, 0, 0, 0.35);
+}
